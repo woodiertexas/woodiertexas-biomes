@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -19,7 +20,9 @@ public class WoodiertexasBiomes implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("woodiertexasbiomes");
 
-	public static final Block BLACKWOOD_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+	public static final Block BLACKWOOD_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+	public static final Block BLACKWOOD_PLANKS = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+	public static final Block GLOWING_BLACKWOOD_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 	//public static final Block GLOWING_BLACKWOOD_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 
 	@Override
@@ -28,9 +31,17 @@ public class WoodiertexasBiomes implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		//Blackwood Block
-		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "blackwood_log"), BLACKWOOD_BLOCK);
-		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "blackwood_log"), new BlockItem(BLACKWOOD_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+		//Blackwood Log
+		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "blackwood_log"), BLACKWOOD_LOG);
+		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "blackwood_log"), new BlockItem(BLACKWOOD_LOG, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+
+		//Blackwood Planks
+		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "blackwood_planks"), BLACKWOOD_PLANKS);
+		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "blackwood_planks"), new BlockItem(BLACKWOOD_PLANKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+
+		//Glowing Blackwood Log
+		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "glowing_blackwood_log"), GLOWING_BLACKWOOD_LOG);
+		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "glowing_blackwood_log"), new BlockItem(GLOWING_BLACKWOOD_LOG, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
 	}
 }

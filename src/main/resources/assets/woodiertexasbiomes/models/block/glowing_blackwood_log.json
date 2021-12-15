@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "woodiertexasbiomes:block/glowing_blackwood_log"
+    }
+}

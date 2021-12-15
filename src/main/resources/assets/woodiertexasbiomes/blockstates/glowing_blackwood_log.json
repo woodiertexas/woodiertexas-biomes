@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "woodiertexasbiomes:block/glowing_blackwood_log",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "woodiertexasbiomes:block/glowing_blackwood_log"
+        },
+        "axis=z": {
+            "model": "woodiertexasbiomes:block/glowing_blackwood_log",
+            "x": 90
+        }
+    }
+}
