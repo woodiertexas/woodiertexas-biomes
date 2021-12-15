@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "woodiertexasbiomes",
+  "version": "0.0.1",
+
+  "name": "Woodiertexas' Biomes",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "woodiertexas"
+  ],
+  "contact": {
+    "homepage": "none",
+    "sources": "none"
+  },
+
+  "license": "MIT",
+  "icon": "assets/woodiertexasbiomes/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.woodiertexas.WoodiertexasBiomes"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
