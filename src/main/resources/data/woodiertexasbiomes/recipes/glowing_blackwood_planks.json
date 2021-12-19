@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "planks",
+    "ingredients": [
+        {
+            "item": "woodiertexasbiomes:glowing_blackwood_log"
+        }
+    ],
+    "result": {
+        "item": "woodiertexasbiomes:glowing_blackwood_planks",
+        "count": 4
+    }
+}

@@ -20,10 +20,13 @@ public class WoodiertexasBiomes implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("woodiertexasbiomes");
 
+	//Blocks
 	public static final Block BLACKWOOD_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 	public static final Block BLACKWOOD_PLANKS = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 	public static final Block GLOWING_BLACKWOOD_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	//public static final Block GLOWING_BLACKWOOD_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+	public static final Block GLOWING_BLACKWOOD_PLANKS = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+
+	//Biomes
 
 	@Override
 	public void onInitialize() {
@@ -43,5 +46,8 @@ public class WoodiertexasBiomes implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "glowing_blackwood_log"), GLOWING_BLACKWOOD_LOG);
 		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "glowing_blackwood_log"), new BlockItem(GLOWING_BLACKWOOD_LOG, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
+		//Glowing Blackwood Planks
+		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "glowing_blackwood_planks"), GLOWING_BLACKWOOD_PLANKS);
+		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "glowing_blackwood_planks"), new BlockItem(GLOWING_BLACKWOOD_PLANKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 	}
 }
