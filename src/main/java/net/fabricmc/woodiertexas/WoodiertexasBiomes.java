@@ -12,7 +12,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.system.CallbackI;
 
 public class WoodiertexasBiomes implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -26,7 +25,8 @@ public class WoodiertexasBiomes implements ModInitializer {
 	public static final Block GLOWING_BLACKWOOD_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 	public static final Block GLOWING_BLACKWOOD_PLANKS = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
 
-	//Biomes
+	//Plants
+	public static final Block FUNNY_LILY_PAD = new WoodiertexasPlantBlocks();
 
 	@Override
 	public void onInitialize() {
@@ -49,5 +49,9 @@ public class WoodiertexasBiomes implements ModInitializer {
 		//Glowing Blackwood Planks
 		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "glowing_blackwood_planks"), GLOWING_BLACKWOOD_PLANKS);
 		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "glowing_blackwood_planks"), new BlockItem(GLOWING_BLACKWOOD_PLANKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+
+		//Plants
+		Registry.register(Registry.BLOCK, new Identifier("woodiertexasbiomes", "funny_lily_pad"), FUNNY_LILY_PAD);
+		Registry.register(Registry.ITEM, new Identifier("woodiertexasbiomes", "funny_lily_pad"), new BlockItem(FUNNY_LILY_PAD, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 	}
 }

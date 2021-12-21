@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "woodiertexasbiomes",
-  "version": "0.0.1",
+  "version": "0.0.3",
 
   "name": "Woodiertexas' Biomes",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -20,10 +20,13 @@
   "entrypoints": {
     "main": [
       "net.fabricmc.woodiertexas.WoodiertexasBiomes"
+    ],
+    "client": [
+      "net.fabricmc.woodiertexas.WoodiertexasBiomesClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "woodiertexasbiomes.mixins.json"
   ],
 
   "depends": {

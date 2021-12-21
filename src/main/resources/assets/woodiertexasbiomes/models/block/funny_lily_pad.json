@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "woodiertexasbiomes:block/funny_lily_pad_stem",
+		"3": "woodiertexasbiomes:block/funny_lily_pad",
+		"particle": "woodiertexasbiomes:block/funny_lily_pad"
+	},
+	"elements": [
+		{
+			"from": [2, 9, 2],
+			"to": [14, 9, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 5, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 10, 0], "texture": "#3"},
+				"east": {"uv": [0, 0, 12, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 10, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 12, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [5, 0, 8],
+			"to": [11, 9.5, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 4.75, 8]},
+			"faces": {
+				"north": {"uv": [4, 4.5, 12, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 9.5], "texture": "#missing"},
+				"south": {"uv": [4, 4.5, 12, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 9.5], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [5, 0, 8],
+			"to": [11, 9.5, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 4.75, 8]},
+			"faces": {
+				"north": {"uv": [4, 4.5, 12, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 9.5], "texture": "#missing"},
+				"south": {"uv": [4, 4.5, 12, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 9.5], "texture": "#missing"},
+				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "pad",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "stalk",
+			"origin": [8, 2.5, 8],
+			"color": 0,
+			"children": []
+		},
+		1,
+		2
+	]
+}
